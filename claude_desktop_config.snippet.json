@@ -1,0 +1,10 @@
+{
+  "_comment": "Add this to your Claude Desktop config to register eval-mcp-server. Location: macOS ~/Library/Application Support/Claude/claude_desktop_config.json ; Windows %APPDATA%/Claude/claude_desktop_config.json. Merge the 'eval-gate' entry into your existing 'mcpServers' object. Replace ABSOLUTE_PATH with the real path to this repo, and use a python that has 'mcp' installed (pip install -r requirements.txt). Restart Claude Desktop; the score_slop / grade_rag tools, the rubric://slop-rules resource, and the review-draft prompt then appear in the client.",
+  "mcpServers": {
+    "eval-gate": {
+      "command": "python3",
+      "args": ["-m", "server"],
+      "cwd": "/ABSOLUTE_PATH/AI_Engineer_Portfolio/06_projects/eval-mcp-server"
+    }
+  }
+}
